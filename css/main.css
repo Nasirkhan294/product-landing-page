@@ -1,45 +1,191 @@
 /* ============> Global Styles <============= */
 
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 16px;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-  }
-  
-  ul,
-  ol {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: #3882f6;
-  }
-  
-  .content-wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
-  
-  section {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #3882f6;
-    color: #fff;
-  }
-  
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+/* ----------------------> Mobile Styles <--------------------- */
+
+/* ->-===-> Header  <-===-<- */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #1f2937;
+}
+
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+header .logo {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #e5e7eb;
+  font-family: 'Dancing Script', cursive;
+}
+
+p {
+  font-size: 0.875em;
+  color: #e5e7eb;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 70%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+.header-divider {
+  width: 80%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+  background-color: #3882f6;
+}
+
+/* ->-===-> Hero Section  <-===-<- */
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #1f2937;
+}
+
+.hero-area h1 {
+  font-size: 1.875em;
+  color: #f9faf8;
+  font-weight: 700;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+.hero-area img {
+    width: 80%;
+}
+/* ->-===-> Products Section  <-===-<- */
+#products .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#products .products-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0;
+}
+
+#products article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 100%;
+}
+
+#products article img {
+  width: 80%;
+}
+
+#products article p {
+  padding: 0 30px;
+  color: #1f2937;
+}
+
+/* ->-===-> Quote Section  <-===-<- */
+#quote {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+/* ->-===-> Call to action section  <-===-<- */
+.call-to-action .content-wrapper {
+  background-color: #3882f6;
+  padding: 20px;
+}
+
+.call-to-action h2,
+p {
+  color: #f9faf8;
+  padding: 10px 20px;
+}
+
+.call-to-action button {
+  background-color: transparent;
+  border: 2px solid #f9faf8;
+}
+/* ->-===-> Footer  <-===-<- */
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+}
