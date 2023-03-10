@@ -24,6 +24,10 @@ a {
   color: #e5e7eb;
 }
 
+i {
+  color: #3882f6;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -33,6 +37,11 @@ section {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+p {
+  font-size: 0.875em;
+  color: #e5e7eb;
 }
 
 .btn {
@@ -68,16 +77,10 @@ header .content-wrapper {
   margin: 0;
 }
 
-header .logo {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #e5e7eb;
+header .logo p {
   font-family: 'Dancing Script', cursive;
-}
-
-p {
-  font-size: 0.875em;
-  color: #e5e7eb;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 header nav {
@@ -121,9 +124,8 @@ header nav ul {
   flex-direction: column-reverse;
 }
 
-
 .hero-area img {
-    width: 80%;
+  width: 80%;
 }
 /* ->-===-> Products Section  <-===-<- */
 #products .content-wrapper {
