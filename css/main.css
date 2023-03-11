@@ -128,34 +128,31 @@ header nav ul {
   width: 80%;
 }
 /* ->-===-> Products Section  <-===-<- */
-#products .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-#products .products-content {
+#products .product-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
 }
 
-#products article {
+#products .product-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  flex-basis: 100%;
+  flex-flow: row wrap;
 }
 
-#products article img {
+#products figure {
   width: 80%;
 }
 
-#products article p {
-  padding: 0 30px;
+#products figure img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 9px 8px 12px #3882f6;
+}
+
+#products p {
   color: #1f2937;
 }
 
@@ -170,6 +167,10 @@ header nav ul {
 
 /* ->-===-> Call to action section  <-===-<- */
 .call-to-action .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   background-color: #3882f6;
   padding: 20px;
 }
@@ -191,3 +192,72 @@ footer .content-wrapper {
   align-items: flex-end;
   margin: 0;
 }
+
+/* ----------------------> Tablet and Desktop Breakpoints <--------------------- */
+
+@media only screen and (min-width: 768px) {
+  /* ->-===-> Tablet Styles  <-===-<- */
+
+  /* ---> Header <--- */
+  header .content-wrapper {
+    justify-content: space-between;
+    padding: 0 35px;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav {
+    width: 35%;
+  }
+
+  /* ---> Hero Area <--- */
+  .hero-area .content-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero-content {
+    text-align: left;
+    width: 40%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5em;
+  }
+
+  .hero-content p {
+    font-size: .7em;
+  }
+
+  /* ---> Products Section <--- */
+  #products .product-item {
+    flex-basis: 40%;
+  }
+
+  #products p {
+    padding: 0 12px;
+    text-align: center;
+  }
+
+  /* ---> Products Section <--- */
+  .call-to-action .content-wrapper {
+    justify-content: space-around;
+    height: 140px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .call-to-action-description {
+    width: 60%;
+  }
+
+  .call-to-action h2,
+  p {
+    text-align: left;
+    padding: 0;
+    margin: 10px 0;
+  }
+}
+
+
